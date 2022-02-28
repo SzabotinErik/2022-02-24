@@ -36,10 +36,7 @@ namespace TotoGUI
                 {
                     hibaskar += ch + ";";
                 }
-                else
-                {
-                    checkBox2.Checked = false;
-                }
+             
                 //if (ch == '1' || ch == '2' || ch == 'x')
                 //{
                 //    checkBox2.Checked = false;
@@ -49,6 +46,7 @@ namespace TotoGUI
                 //    checkBox2.Checked = true;
                 //}
             }
+            checkBox2.Text = $"Helytelen karakter az eredménybe({hibaskar})";
         }
     }
 }
