@@ -28,6 +28,27 @@ namespace TotoGUI
                 checkBox1.Checked = true;
             }
             checkBox1.Text = $"Nem megfelelő a karakterek száma({textBox1.Text.Length})";
+            //10.c
+            string hibaskar = "";
+            foreach (var ch in textBox1.Text)
+            {
+                if (ch != '1' && ch!='2'&&ch!='x')
+                {
+                    hibaskar += ch + ";";
+                }
+                else
+                {
+                    checkBox2.Checked = false;
+                }
+                //if (ch == '1' || ch == '2' || ch == 'x')
+                //{
+                //    checkBox2.Checked = false;
+                //}
+                //else
+                //{
+                //    checkBox2.Checked = true;
+                //}
+            }
         }
     }
 }
